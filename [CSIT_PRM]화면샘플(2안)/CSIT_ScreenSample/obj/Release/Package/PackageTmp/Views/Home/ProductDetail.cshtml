@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css?<?=filemtime('Site.css')?>" rel="stylesheet" /><!-- #2 -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <table class="body-ProductDetail">
+        <tr valign="top">
+            <td rowspan="4">
+                <table class="category-table-body">
+                    <!-- Category 내용들 -->
+                    <div class="category-mainfont">
+                        <!-- Category 메인제목 -->
+                        <h4>Brand</h4>
+                    </div>
+                    <ul>
+                        <li><a href="">Zebra (1075)</a></li>
+                        <li><a href="">SATO (332)</a></li>
+                        <li><a href="">Intermec (238)</a></li>
+                        <li><a href="">Datamax-O-Neil (986)</a></li>
+                        <li><a href="">TSC (116)</a></li>
+
+                        <li><a href="">Product 1</a></li>
+                        <li><a href="">Product 2</a></li>
+                        <li><a href="">Product 3</a></li>
+                        <li><a href="">Product 4</a></li>
+                        <li><a href="">Product 5</a></li>
+                        <li><a href="">Product 6</a></li>
+                        <li><a href="">Product 7</a></li>
+                        <li><a href="">Product 8</a></li>
+                        <li><a href="">Product 9</a></li>
+                        <li><a href="">Product 10</a></li>
+                    </ul>
+                </table>
+            </td>
+
+            <td>
+                회원정보 출력 Table
+                <table class="clientinfo-table-body">
+                    <tr valign="top">
+                        <td>회원이름: 김철수</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc1</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc2</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc3</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc4</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td class="blank1-search">
+                공백1
+            </td>
+
+            <td>
+                회원 담당자 정보 Table
+                <table class="clientmanager-table-body">
+                    <tr valign="top">
+                        <td>담당자 이름: manager</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>담당자 번호: 010-444-4444</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc4</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc4</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td class="blank2-search" rowspan="4">
+                공백2
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <img class="product-bigsize-image" src="../images/product.png" alt="" />
+            </td>
+
+            <td>
+                <p>수량 Table</p>
+                <p>제품옵션 설정 Table</p>
+                <p></p>
+                
+                
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <img src="../images/product_spec.png" alt="" />
+
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

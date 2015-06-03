@@ -1,0 +1,46 @@
+﻿<!--
+
+ #1. 크롬에서 쿠키가 저장되어 빌드를 해도 css 수정된것이 보이지 않는 현상을 막기위한 코드사용.
+ #2. 간혹 쿠키의 문제 때문에 Styles가 먹히지 않을때가 있다. 그래서 다음과 같은 구문을 사용
+      <link href="~/Content/Styles.css?<?=filemtime('Styles.css')?>" rel="stylesheet" />
+
+ #3.table 에서 table 설정을 해주었을때 각각의 td 에 준 값들읳바이 table의 width 값과일치하지
+    않으면 td 의 width 값을 무시한채로 정렬한다.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css?<?=filemtime('Site.css')?>" rel="stylesheet" /><!-- #2 -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+    <style type="text/css">
+        
+    </style>
+</head>
+
+<body>
+     <div align="center">
+        <!--#1-->
+        @RenderBody()
+        <!--  ^2RenderBody는 다음 화면이 올때 잘리지 않도록 해줍니다.-->
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year @DateTime.Now.Month 월- 창성 PRM 준비중</p>
+            <img src="../images/csit_footbanner.png" alt="" />
+
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- emmet code
+    div>a{Login}*3
+
+    div>table[border=1 align=center]>tr*2>td[width=100px]{$$}*5
+-->

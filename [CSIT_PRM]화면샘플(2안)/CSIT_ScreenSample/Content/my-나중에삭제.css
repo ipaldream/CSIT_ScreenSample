@@ -1,0 +1,274 @@
+/** ==================================================
+ *	모든 페이지에서 사용하는 css
+ *	================================================== */
+
+/* © Jang
+---------------------------------------------------------------- */
+
+/**
+ * ==================================================
+ *	기본값
+ * ==================================================
+ */
+/* body,input,textarea,select,button,table{font-size:13px;line-height:18px;font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif,AppleGothic;} */
+
+* { font-size:12px; font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif,AppleGothic;}
+
+table {border-collapse: collapse; border-spacing: 0;}
+table th, table td	{vertical-align:middle;}
+.center {text-align:center;}
+a.topMenu {color:#fff;}
+
+input[type=text], input[type=password]				{background-color:#f9f9f9; color:#333;}
+input[type=text]:FOCUS, input[type=password]:FOCUS	{background-color:#f3f3f3; color:#000;}
+textarea		{background-color:#f9f9f9; color:#333;}
+textarea:FOCUS	{background-color:#f3f3f3; color:#000;}
+
+
+/**
+ * ==================================================
+ *	마스터 페이지
+ * ==================================================
+ */
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+body > .wrapbody {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+body > footer {
+  height: 60px;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+/* wrapcontainer */
+.wrapcontainer {padding: 5px 0 50px 0; max-width:1100px; min-height:600px; margin:0 auto;}
+
+/* container */
+.wrapcontainer .container {text-align:left; max-width: none !important;}
+
+/* container : 제목, 설명, 아이콘, 경로 : 제목 아이콘 모양은 my.js 에서 설정 */
+.wrapcontainer .container .page-header {position:relative; margin-bottom:20px; padding:0; margin:0; padding-bottom:10px; margin-bottom:20px;}
+.wrapcontainer .container .page-header h1 {display:inline-block; letter-spacing:-1px; padding:0; margin:0; margin-right:10px; font-size:22px; font-weight:bold; font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif,AppleGothic;}
+.wrapcontainer .container .page-header h1 span.icon {display:none; font-size:15px; margin-right: 5px; color: #0f618e;}
+.wrapcontainer .container .page-header p.lead {display:inline-block; padding:0; margin:0; font-size:13px; font-family:'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif,AppleGothic !important;}
+.wrapcontainer .container .page-header ol.breadcrumb {text-align:right; background-color:transparent; position:absolute; top:-10px; right:0;}
+.wrapcontainer .container .page-header ol.breadcrumb li {color:#999;}
+.wrapcontainer .container .page-header ol.breadcrumb li.active {color:#333;}
+
+/* footer */
+body > footer {border-top:2px solid #b6cfed; background-color: #f5f5f5;}
+body > footer .container {width:100%; border-top:2px solid #f0f0f0;}
+body > footer .container .credit {
+  max-width:1100px;
+  margin: 15px auto;
+  color:#555;
+  text-align: center;
+}
+
+/* 상단 */
+header {background-color:#f8f8f8; margin:0; padding:0} /* background-color:#f8f8f8; border-bottom:2px solid #428bca; */
+.navbar{margin-bottom:0; border-radius:0px; border:0 none; max-width:1100px; margin:0 auto;} /* nav */
+.navbar-brand {background-color:#fff;padding:0; margin:0; padding:11px 20px 0 20px;}
+
+/* 상단 : 메뉴 */
+.navbar-default .navbar-nav > li > a {
+  color: #555; /*777777*/
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333333;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555555; /* 555555 , fff */
+  background-color: #e7e7e7; /* e7e7e7 , 428bca */
+}
+
+/* 상단 : 메뉴 : 드롭다운 */
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #333333;
+  border-bottom-color: #333333;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555555;
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+  border-top-color: #555555;
+  border-bottom-color: #555555;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color: #777777;
+  border-bottom-color: #777777;
+}
+
+/* 상단 : 메뉴 : 드롭다운 .active */
+.navbar-default .navbar-nav > .active.dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .active.dropdown > a:focus .caret {
+  border-top-color: #ccc;/* #333333 */
+  border-bottom-color: #ccc;/* #333333 */
+}
+.navbar-default .navbar-nav > .active.open > a,
+.navbar-default .navbar-nav > .active.open > a:hover,
+.navbar-default .navbar-nav > .active.open > a:focus {
+  color: #fff;/* #555555 */
+  background-color: #428bca;/* #e7e7e7 */
+}
+.navbar-default .navbar-nav > .active.open > a .caret,
+.navbar-default .navbar-nav > .active.open > a:hover .caret,
+.navbar-default .navbar-nav > .active.open > a:focus .caret {
+  border-top-color: #ccc; /* #555555 */
+  border-bottom-color: #ccc;/* #555555 */
+}
+.navbar-default .navbar-nav > .active.dropdown > a .caret {
+  border-top-color: #fff; /* #777777 */
+  border-bottom-color: #fff; /* #777777 */
+}
+
+
+/**
+ * ==================================================
+ *	모달
+ * ==================================================
+ */
+.modal .modal-dialog {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* 모달 테이블 */
+table.modal-table			{width:100%; font-size:12px; border:2px solid #d0d0c7; border-left-width:1px; border-right-width:1px;}
+table.modal-table caption	{text-align:left; padding:3px 0 5px 0; font-weight:bold;}
+table.modal-table thead th	{padding:5px; text-align:center; color:#2f291d; background-color:#f2f2eb; border-bottom:1px solid #d0d0c7; border-left:1px solid #d0d0c7;}
+table.modal-table tbody th	{padding:5px 20px; text-align:left; color:#2f291d; background-color:#f2f2eb; border-bottom:1px solid #e0e0d7;}
+table.modal-table tbody td	{padding:5px; background-color:#fff; border-bottom:1px solid #e0e0d7; border-left:1px solid #e0e0d7; color:#333;}
+
+table.modal-table tfoot td	{padding:5px; background-color:#f7f7f7; border-bottom:1px solid #e0e0d7; border-left:1px solid #e0e0d7; color:#333;}
+
+/**
+ * ==================================================
+ *	툴팁
+ * ==================================================
+ */
+.tooltip-inner {background-color:#fff29d;color:#000;padding:5px 8px;font-weight:normal;}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow {border-top-color:#fff29d;}
+.tooltip.right .tooltip-arrow {border-right-color:#fff29d;}
+.tooltip.left .tooltip-arrow {border-left-color:#fff29d;}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {border-bottom-color:#fff29d;}
+.tooltip.in {opacity:0.95;filter:alpha(opacity=95);}
+
+/**
+ * ==================================================
+ *	리스트
+ * ==================================================
+ */
+/* 리스트 검색 폼 */
+.list {position:relative;}
+.list div.list-search {}
+.list form.list-search-form {}
+.list form.list-search-form div {display:inline-block;}
+.list form.list-search-form select {width:auto;}
+.list form.list-search-form div.form-group {margin-right:10px; display:inline-block;}
+.list form.list-search-form div.form-group.multi-search {margin-right:0;}
+.list form.list-search-form div.form-group label {margin-right:5px;}
+.list form.list-search-form div.form-group input {width:100px;}
+.list form.list-search-form div.list-search-row1 {display:inline-block; margin-right:30px;}
+.list form.list-search-form div.list-search-row1 div.list-search-memu {display:inline-block;}
+.list form.list-search-form div.list-search-row1 div.list-search-input {display:inline-block;}
+.list form.list-search-form div.list-search-row1 div.list-search-button {display:inline-block; margin-right:10px;}
+.list form.list-search-form div.list-search-row1 div.list-search-text {display:inline-block; padding:5px 0;}
+.list form.list-search-form div.list-search-row1 div.list-search-text div.alert-dismissable {display:inline-block;padding-right:25px;}
+.list form.list-search-form div.list-search-row1 div.list-search-text div.alert-dismissable button {right:-8px} /* × */
+.list form.list-search-form div.list-search-row1 div.list-search-text div.alert-dismissable span {color:#91bbd9}
+.list form.list-search-form div.list-search-row2 {display:inline-block; text-align:right;}
+.list form.list-search-form div.list-search-row2 p.list-search-num {display:inline-block;margin-right:10px}
+.list form.list-search-form div.list-search-row2 p.list-search-num strong {color:#f30;}
+.list form.list-search-form div.datetext {display:inline-block;margin-right:10px;} /* 검색폼에서 날짜 문자열 */
+.list form.list-search-form div.datetext button { margin-right:5px; background-color:#e3e3e3; }
+.list form.list-search-form div.datetext p { display:inline-block; padding:5px 10px; font-weight:bold; background-color:#fff3a2; font-size: 12px; line-height: 1.5; border-radius: 3px; }
+
+/* 리스트 테이블 */
+.list table.list-table			{width:100%; font-size:12px; margin-bottom:15px;}
+.list table.list-table thead th	{padding:5px; text-align:center; color:#4f493d; background-color:#f2f2eb; border-top:1px solid #e0e0d7; border-right:1px solid #e0e0d7; border-bottom:2px solid #e0e0d7; border-left:1px solid #e0e0d7;}
+.list table.list-table thead td	{}
+.list table.list-table tbody th	{}
+.list table.list-table tbody td	{padding:5px; background-color:#fff; border-bottom:1px solid #d5d5d5; border-left:1px solid #f3f3f3; color:#333;}
+.list table.list-table tbody td dl.data		{color:#333;padding:3px; margin-bottom:3px;} /* 일반 */
+.list table.list-table tbody td dl.data.wrap	{border:1px solid #ddd;background-color:#f9f9f9;margin-top:5px;color:#333;padding:3px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;} /* 메모 */
+.list table.list-table tbody td dl.data dt.b	{display:block;color:#888;letter-spacing:0;margin-right:0;font-weight:bold;background-color:#f3f3f3;padding:0 3px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}	/* 제목(block) */
+.list table.list-table tbody td dl.data dt,
+.list table.list-table tbody td dl.data dt.i	{display:inline-block;color:#888;letter-spacing:-1px;margin-right:5px;background-color:#f3f3f3;padding:0 3px; margin-top:3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}	/* 라벨 */
+.list table.list-table tbody td dl.data dt.bc	{display:block;color:#888;letter-spacing:0;margin-right:0;font-weight:bold;background-color:#e5efca;padding:0 3px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}	/* 제목(block) 바탕색 */
+.list table.list-table tbody td dl.data dt.ic	{display:inline-block;color:#888;letter-spacing:0;margin-right:10px;font-weight:bold;background-color:#e5efca;padding:0 3px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}	/* 제목(inline-block) 바탕색 */
+.list table.list-table tbody td dl.data dd	{display:inline;color:#333;margin-right:10px}	/* 값 */
+
+/* 자료없음 페이지, 버튼 ...*/
+.list div.list-none {text-align:center; color:#f30; margin-bottom:15px; padding:15px 0 30px 0; border-bottom:2px solid #e0e0d7;}
+.list div.list-page {text-align:center;}
+.list div.list-page ul.pagination {margin:0;}
+
+.list div.list-button {margin-top:0; text-align:right;}
+.list div.list-query {}
+.list div.list-query span {color:#91bbd9;margin-right:8px} /* 쿼리제목 */
+
+/**
+ * ==================================================
+ *	table-striped 줄무늬 행,  table-bordered 선있는 테이블, table-hover 행 hover (부트스트랩)
+ *	뒤에 있어야 함
+ * ==================================================
+ */
+
+/* table-striped */
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #ebf6ff;
+}
+/* table-bordered */
+.table-bordered {
+  border: 1px solid #dddddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+/* table-hover */
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #eee;
+}

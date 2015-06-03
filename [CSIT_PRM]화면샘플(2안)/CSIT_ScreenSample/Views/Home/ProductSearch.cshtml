@@ -1,0 +1,214 @@
+﻿<!--
+    #1.구매정보,마케팅품목 모두 onclick 으로 처리하여 상세페이지 이동
+-->
+@{
+    ViewBag.Title = "ProductSearch";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css?<?=filemtime('Site.css')?>" rel="stylesheet" /><!-- #2 -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+    <style type="text/css">
+        .productserch_body_width{
+            width: 1200px;
+            margin-top: 50px;
+
+            margin-left:    auto;
+            margin-right:   auto;
+            align-content:  center;
+        }
+        .blank1_topmargin{
+            margin-top: 20px;
+            border-bottom: solid; /*css 도 적용 하는데 순서에 영향을 받는다*/
+            border-bottom-color: deepskyblue;
+            
+        }
+
+        .category-top{
+            margin-top: 10px;
+            text-align: left;
+            border: 1px solid gray;
+            padding-bottom: 0px;
+
+            width: 1000px;/*category 범주 입니다*/
+        }
+        .category-mid-content{
+            padding: 10px;
+            border: 1px solid gray;
+            
+            width: 1000px;/*category 범주 입니다*/
+        }
+        .category-bottom-blank{
+            margin-bottom: 10px;
+        }
+
+        .category-bodyframe{
+
+            margin-left: auto;
+            margin-right: auto;/*이거 해결하기 아놔;*/
+
+            text-align: left;
+            width: 800px;/*category 범주 입니다 
+                category-subject 더하기 bodycommentframe을 하면됩니다. */
+            height:200px;
+        }
+
+        /*dt*/
+        .category-subject{
+            float: left;
+            width: 100px;
+            text-align: left;
+        }
+
+        /*dd*/
+        .category-bodycommentframe{
+            float: left;
+            text-align: left;
+            width: 700px;
+        }
+
+        
+
+        /*dl*/
+        .category-bodycomment-topmargin{
+            padding-top: 10px;
+        }
+
+        .category-bodycomment-topmargin-topline{
+            
+            border-color:  AppWorkspace;
+            border-top: 1px solid;
+            padding-top: 10px;
+
+        }
+
+        /*li*/
+        .category-bodycomment{
+            float: left;
+            width: 150px;
+            height: 30px;
+        }
+
+       ul{
+          list-style:none;/* 이것이 li 의 style 을 없애준다*/
+       }
+
+        
+    </style>
+</head>
+
+<body align="center">
+    
+    <div class="productserch_body_width">
+        <!-- ##모든 컨텐츠 내용은 이 내부에서 코드를 작성합니다##-->
+        <div class="col-sm-5">
+            <!-- #수정1 -->
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="검색할 제품의 모델명을 입력해주세요.">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">검색</button>
+                </span>
+            </div>
+        </div>
+
+        <div class="blank1_topmargin"></div>
+
+        
+        <div class="category-top">
+            <ol class="breadcrumb">
+                <li>현재카테고리:</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+        </div>
+        <!---->        <!-- #qq -->
+        <div class="category-bodyframe">
+            <div class="category-mid-content">
+                <dl>
+                    <!-- top margin-->
+                    <dt class="category-subject">바코드 프린터</dt>
+                    <dd class="category-bodycommentframe">
+                        <ul>
+                            <li class="category-bodycomment"><a href="#">Desktop</a></li>
+                            <li class="category-bodycomment"><a href="#">Mobile</a></li>
+                            <li class="category-bodycomment"><a href="#">Pax Print Engines</a></li>
+                            <li class="category-bodycomment"><a href="#">기타</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+
+                <dl class="category-bodycomment-topmargin-topline">
+                    <!-- top margin-->
+                    <dt class="category-subject">스캐너</dt>
+                    <dd class="category-bodycommentframe">
+                        <ul>
+                            <li class="category-bodycomment"><a href="#">Desktop</a></li>
+                            <li class="category-bodycomment"><a href="#">Mobile</a></li>
+                            <li class="category-bodycomment"><a href="#">Pax Print Engines</a></li>
+                            <li class="category-bodycomment"><a href="#">기타</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+
+                <dl class="category-bodycomment-topmargin-topline">
+
+                    <dt class="category-subject">Product4</dt>
+                    <dd class="category-bodycommentframe">
+                        <ul>
+                            <li class="category-bodycomment"><a href="#">Desktop</a></li>
+                            <li class="category-bodycomment"><a href="#">Mobile</a></li>
+                            <li class="category-bodycomment"><a href="#">Pax Print Engines</a></li>
+                            <li class="category-bodycomment"><a href="#">기타</a></li>
+                        </ul>
+                    </dd>
+
+                    <!-- top margin-->
+                </dl>
+
+                <dl class="category-bodycomment-topmargin-topline">
+                    <dt class="category-subject">Product3</dt>
+                    <dd class="category-bodycommentframe">
+                        <ul>
+                            <li class="category-bodycomment"><a href="#">Desktop</a></li>
+                            <li class="category-bodycomment"><a href="#">Mobile</a></li>
+                            <li class="category-bodycomment"><a href="#">Pax Print Engines</a></li>
+                            <li class="category-bodycomment"><a href="#">기타</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+
+                <dl class="category-bodycomment-topmargin">
+                    <!-- top margin-->
+                    <dt class="category-subject">&nbsp;</dt>
+                    <dd class="category-bodycommentframe">
+                        <ul>
+                            <li class="category-bodycomment"><a href="#">Desktop</a></li>
+                            <li class="category-bodycomment"><a href="#">Mobile</a></li>
+                            <li class="category-bodycomment"><a href="#">Pax Print Engines</a></li>
+                            <li class="category-bodycomment"><a href="#">기타</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <div class="category-bottom-blank"></div>
+        </div>
+            
+        <!---->
+
+     <!-- ##모든 컨텐츠 내용은 이 내부에서 코드를 작성합니다##-->
+    </div>
+    <br />
+
+</body>
+</html>
+
+<!--
+
+-->

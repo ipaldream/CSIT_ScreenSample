@@ -1,0 +1,227 @@
+﻿<!--
+    #1.구매정보,마케팅품목 모두 onclick 으로 처리하여 상세페이지 이동
+-->
+@{
+    ViewBag.Title = "ProductSearch";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css?<?=filemtime('Site.css')?>" rel="stylesheet" /><!-- #2 -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <table class="body-ProductSearch" align="center" cellpadding="0" cellspacing="0">
+        <!-- ######Category Table 영역입니다.###### -->
+        <tr valign="top">
+            <td rowspan="4">
+                <table class="category-table-body">
+                    <!-- Category 내용들 -->
+                    <div class="category-mainfont">
+                        <!-- Category 메인제목 -->
+                        <h4>Brand</h4>
+                    </div>
+                    <ul>
+                        <li><a href="">Zebra (1075)</a></li>
+                        <li><a href="">SATO (332)</a></li>
+                        <li><a href="">Intermec (238)</a></li>
+                        <li><a href="">Datamax-O-Neil (986)</a></li>
+                        <li><a href="">TSC (116)</a></li>
+
+                        <li><a href="">Product 1</a></li>
+                        <li><a href="">Product 2</a></li>
+                        <li><a href="">Product 3</a></li>
+                        <li><a href="">Product 4</a></li>
+                        <li><a href="">Product 5</a></li>
+                        <li><a href="">Product 6</a></li>
+                        <li><a href="">Product 7</a></li>
+                        <li><a href="">Product 8</a></li>
+                        <li><a href="">Product 9</a></li>
+                        <li><a href="">Product 10</a></li>
+                    </ul>
+                </table>
+            </td>
+
+            <!--
+            <td  rowspan="4">
+                공백1
+            </td>
+            -->
+            <!-- ######회원정보 Table 영역입니다.###### -->
+            <td class="clientinfo-table-body">
+                회원정보 출력 Table
+
+                <table class="clientinfo-table-body">
+                    <tr valign="top">
+                        <td>
+                            회원이름: 김철수
+                        </td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc1</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc2</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc3</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc4</td>
+                    </tr>
+
+                </table>
+
+            </td>
+
+            <!-- 공백1 영역입니다 -->
+            <td class="blank1-search">
+                공백1
+            </td>
+
+            <!-- ######회원담당자 정보 Table 영역입니다.###### -->
+            <td class="clientmanager-table-body">
+                회원 담당자 정보 Table
+                <table class="clientmanager-table-body">
+                    <tr valign="top">
+                        <td>담당자 이름: manager</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>담당자 번호: 010-444-4444</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc4</td>
+                    </tr>
+
+                    <tr valign="top">
+                        <td>기타사항: etc4</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td class="blank2-search" rowspan="4">
+                공백2
+            </td>
+
+            <!-- ######미니장바구니 Table 영역입니다.###### -->
+            <!--
+            <td rowspan="2" class="minicart-table-body">
+                미니장바구니 Table
+                <table class="product-minicart-image">
+                    <tr>
+                        <td>
+                            <div class="thumbnail" onclick="location.href='';">
+                                <img width="200" src="../images/cart.png">
+                                <h6>품목이름1</h6>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            -->
+        </tr>
+
+        <!-- ######최근 구매정보 Table 영역입니다.###### -->
+        <!--
+        <tr>
+            <td colspan="3">
+                최근 구매정보 Table
+                <table class="curbuyhistory-table-body">
+                    <tr>
+                        <td>
+                            <div class="thumbnail" onclick="location.href='';">
+                                <img class="product-prebuyview-image" src="../images/cart.png">
+                                <h4>품목이름1</h4>
+                                <p>기타정보출력:######</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        -->
+        <!-- ######마케팅 품목 Table 영역입니다.###### -->
+        <tr>
+            <td colspan="3">
+                마케팅품목 Table
+                <table class="">
+                    <tr>
+                        @for (var i = 0; i < 4; i++)
+                        {
+                            <td>
+                                <div class="thumbnail" onclick="location.href='';">
+                                    <img class="product-maketing-image" src="../images/product.png">
+                                    <li>제품명  :ZM600       </li>
+                                    <li>제품분류:바코드프린터</li>
+                                    <li>제조사  :Zebra       </li>
+                                    <li>할인가격:2,000,000원</li>
+                                </div>
+                            </td>
+                        }
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- ######제품 품목 Table 영역입니다.###### -->
+        <tr valign="top">
+            <!-- 다른것은 thumbnail이기 때문에 설정이 필요없다.-->
+            <td colspan="3" class="product-maketing-image">
+                제품품목 Table
+                <table class="productlist-subject-body">
+                    <div>
+                        <tr valign="top">
+                            <td height="30px" align="left"> 제품품목 </td>
+                            <td height="30px" align="right"> 추천순,조회순,인기순 </td>
+                        </tr>
+                    </div>
+                </table>
+
+                <table>
+                    <!-- product 영역-->
+                    <tr valign="top">
+                        @for (var i = 0; i < 4; i++)
+                        {
+
+                            <td class="product-stocklist-image">
+                                <!-- 이미지 크기만큼 가로를 유지-->
+
+
+                                <div class="thumbnail" onclick="location.href='';">
+                                    <img class="product-stocklist-image" src="../images/product.png">
+                                    <ul>
+                                        <li>제품명  :ZM600       </li>
+                                        <li>제품분류:바코드프린터</li>
+                                        <li>제조사  :Zebra       </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        }
+                    </tr>
+                    <!-- End product-->
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!--
+    ##emmet Code##
+1.메인 테이블생성
+    table[border=1]>tr*4>td{$$}*4
+1-1.
+
+-->

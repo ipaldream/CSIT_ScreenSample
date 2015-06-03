@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSIT_ScreenSample", "CSIT_ScreenSample\CSIT_ScreenSample.csproj", "{F66BFEA8-85AD-4A26-B74B-E68348C909F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{596CAE4C-6B8B-4F51-8A84-2B4A93E98E63}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{5CE8E2D7-B025-49D0-A898-32FA90E105D6}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\CSITScreenSample-WAWS-dev.json = PublishScripts\Configurations\CSITScreenSample-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F66BFEA8-85AD-4A26-B74B-E68348C909F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66BFEA8-85AD-4A26-B74B-E68348C909F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66BFEA8-85AD-4A26-B74B-E68348C909F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66BFEA8-85AD-4A26-B74B-E68348C909F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5CE8E2D7-B025-49D0-A898-32FA90E105D6} = {596CAE4C-6B8B-4F51-8A84-2B4A93E98E63}
+	EndGlobalSection
+EndGlobal

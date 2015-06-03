@@ -1,0 +1,150 @@
+﻿body {
+    
+}
+
+table,
+tr,
+td{
+     border:        1px solid black;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*MainLayout화면에 관한 css class 입니다*/
+.toptable-MainLayout{
+    /* align="center" */
+    margin-left:    auto;
+    margin-right:   auto;
+    margin-top:     20px;
+    margin-bottom:  40px;
+    width:          1000px;
+    height:         50px;
+}
+
+
+
+.toplink-list{
+    text-align:     right;
+    width:          1000px; /*_MainLayout 페이지화면의 Width를 따릅니다.*/
+    /* align="center" */
+    margin-left:    auto;
+    margin-right:   auto;
+}
+
+
+
+
+/*ProductSearch화면에 관한 css class 입니다*/
+.body-ProductSearch{
+    /* align="center" */
+    margin-left:    auto;
+    margin-right:   auto;
+    width:          1000px; /*_MainLayout 페이지화면의 Width를 따릅니다.*/
+}
+
+.category-table-body{
+    text-align:     left;
+    vertical-align: top;
+    width:          150px;
+}
+
+.category-mainfont{
+   color:brown;
+   padding-bottom: 0;
+}
+
+/*category 테이블에 설정한 ul*/
+ul,
+li{
+    padding-left:   10px;
+    list-style:     none;
+    margin-top:     0;
+}
+
+
+.minicart-table-body {
+ width: 115px;
+}
+
+.clientinfo-table-body {
+ width:          250px;
+ height:         110px;
+ text-align:     left;
+ vertical-align: text-top;
+
+}
+
+.clientmanager-table-body {
+ height: 110px;
+ width: 273px;
+ text-align:     left;
+}
+
+.curbuyhistory-table-body{
+ height: 100px;
+}
+
+.product-prebuyview-image{
+ width:     150px;
+ height:    100px;
+}
+
+.product-maketing-image{
+ width:     200px;
+ height:    200px;
+}
+
+.product-stocklist-image{
+ width:     200px;
+ height:    100px;
+}
+
+.product-bigsize-image{
+ width:     300px;
+ height:    300px;
+}
+
+.productlist-subject-body{
+ width:     750px;
+ height:    10px;
+}
+
+.productlist-table-body{
+ width:     700px;
+ height:    100px;
+}
+
+.product-minicart-image{
+ width:     200px;
+ 
+}
+
+/*Shared css script*/
+.blank1-search{
+ width:   150px;
+}
+
+.blank2-search{
+width:    150px;
+}
+
+/*ProductDetail화면에 관한 css class 입니다*/
+.body-ProductDetail{
+ /* align="center" */
+    margin-left:    auto;
+    margin-right:   auto;
+    width:          1000px; /*_MainLayout 페이지화면의 Width를 따릅니다.*/
+}
+
