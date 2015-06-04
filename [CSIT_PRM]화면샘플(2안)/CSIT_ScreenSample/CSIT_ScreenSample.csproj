@@ -132,6 +132,7 @@
     <Content Include="Content\core\modal\success.gif" />
     <Content Include="Content\docs-ko.css" />
     <Content Include="Content\my-나중에삭제.css" />
+    <Content Include="Content\Product.css" />
     <Content Include="Content\site.css" />
     <Content Include="Content\site\main1.png" />
     <Content Include="Content\site\main2.png" />

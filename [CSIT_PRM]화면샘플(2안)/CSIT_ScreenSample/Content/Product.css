@@ -1,0 +1,86 @@
+﻿body {
+}
+
+.productserch_body_width {
+    width: 1200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.blank1_topmargin {
+    margin-top: 20px;
+    border-bottom: solid; /*css 도 적용 하는데 순서에 영향을 받는다*/
+    border-bottom-color: deepskyblue;
+}
+
+.category-top {
+    margin-top: 10px;
+    text-align: left;
+    border: 1px solid gray;
+    width: 950px; /*category 범주 입니다*/
+    /*center*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-bottom-blank {
+    margin-bottom: 10px;
+}
+
+
+/*###############category tag들의 내용이 길어질경우 여기있는것들을 변경합니다############*/
+
+.category-bodyframe {
+    margin-left: auto;
+    margin-right: auto; 
+
+    text-align: left;
+    width: 950px; /*category 범주 입니다 
+                category-subject 더하기 bodycommentframe을 하면됩니다. */
+    height: 200px;
+}
+
+.category-mid-content {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px;
+    border: 1px solid gray;
+    width: 950px; /*category 범주 입니다*/
+}
+
+.category-subject {
+    float: left;
+    width: 100px;
+    text-align: left;
+}
+/*dd*/
+.category-bodycommentframe {
+    float: left;
+    text-align: left;
+    /* commentframe + categorysubject = category_midcontent*/
+}
+/*##############Category Tag Length Change##############*/
+
+.category-bodycomment-topmargin {
+    padding-top: 10px;
+}
+
+.category-bodycomment-topmargin-topline {
+    border-color: AppWorkspace;
+    border-top: 1px solid;
+    padding-top: 10px;
+}
+
+/*li*/
+.category-bodycomment {
+    float: left;
+    width: 150px;
+    height: 30px;
+}
+
+ul {
+    list-style: none; /* 이것이 li 의 style 을 없애준다*/
+}
